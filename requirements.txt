@@ -5,6 +5,5 @@ openai
 faiss-cpu
 typing-extensions
 langchain-community
-
-
+os
 
