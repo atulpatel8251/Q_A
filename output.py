@@ -38,7 +38,7 @@ if uploaded_file is not None:
     texts = text_splitter.split_text(raw_text)
     st.write(f"PDF loaded and split into {len(texts)} chunks.")
 
-    embeddings = OpenAIEmbeddings(api_key=openai_api_key)
+    embeddings = OpenAIEmbeddings(api_key=openai_api_key2)
     document_search = FAISS.from_texts(texts, embeddings)
     st.write("Document embeddings created and stored in FAISS index.")
 
