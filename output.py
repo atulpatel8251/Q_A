@@ -7,6 +7,7 @@ from langchain.llms import OpenAI
 from langchain.vectorstores import FAISS
 
 # Initialize the OpenAI API (make sure you have your OpenAI API key set up)
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 openai_api_key2 = st.secrets["secret_section"]["OPENAI_API_KEY"]
 # Replace with your actual OpenAI API key
